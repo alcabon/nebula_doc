@@ -6,6 +6,7 @@ classDiagram
     Log__c "1" -- "*" LogEntry__c : has
     LogEntry__c "*" -- "*" LoggerTag__c : has
     LogEntryTag__c -- LogEntry__c : links
+    LogEntryTag__c -- LoggerTag__c : links
     Log__c "*" -- "0..1" LoggerScenario__c : associated with
 
     class Log__c {
